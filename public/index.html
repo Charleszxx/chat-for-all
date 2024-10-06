@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="usernameSection" class="username-section">
+            <input type="text" id="usernameInput" placeholder="Enter your username..." />
+            <button id="setUsernameButton">Set Username</button>
+        </div>
+        <div class="chat-window" id="chatWindow" style="display: none;"></div>
+        <div class="input-container" style="display: none;">
+            <input type="text" id="messageInput" placeholder="Type your message here..." />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
