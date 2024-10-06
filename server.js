@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Create or open a database
-const db = new sqlite3.Database('./messages.db', (err) => {
+const db = new sqlite3.Database('./public/messages.db', (err) => {
     if (err) {
         console.error(err.message);
     } else {
@@ -45,7 +45,7 @@ app.post('/messages', (req, res) => {
         }
     });
 });
-
+cm
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
